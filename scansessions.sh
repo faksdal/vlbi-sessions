@@ -20,7 +20,7 @@ html2text -width $(tput cols) $1 | grep -n '' >> allSessions.txt
 html2text -width $(tput cols) $1 | grep -n $3 >> $2$3
 
 echo 'Program name: '$0
-echo $1
+echo 'Param #1: '$1
 echo ''\'$2''\'
 echo $3
 echo $4
