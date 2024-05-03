@@ -1,11 +1,22 @@
-
-
-// C program for the above approach 
+/******************************************************************************
+ *
+ * htmlparser.c; Created by Jon Leithe based on https://www.geeksforgeeks.org/html-parser-in-c-cpp/
+ * Date: 3/5-2024
+ *
+ * First I edited this to accept an input file, instead of a buffer
+ * 
+ * 
+******************************************************************************/
   
-#include <stdbool.h> 
+
 #include <stdio.h> 
-#include <string.h> 
-  
+#include <string.h>
+#include <stdbool.h>
+
+#include "htmlparse.h"
+
+
+
 // Function to parse the HTML code 
 void parser(char* S) 
 { 
@@ -52,17 +63,7 @@ void parser(char* S)
 // Driver Code 
 int main() 
 { 
-    // Given Input 
-    char input1[] = "<h1>This is a statement</h1>"; 
-    char input2[] = "<h1>         This is a statement with some spaces</h1>"; 
-    char input3[] = "<p> This is a statement with some @ #$ ., / special characters</p>         "; 
-	
-    printf("Parsed Statements:\n"); 
-  
-    // Function Call 
-    parser(input1); 
-    parser(input2); 
-    parser(input3); 
+    htmlparse	parse("2024");
   
     return 0; 
 }
