@@ -1,75 +1,149 @@
 <!DOCTYPE html>
+Found a closing bracket
 <html lang="en">
+Found a closing bracket
 <head>
+Found a closing bracket
     <meta charset="utf-8"/>
+Found a closing bracket
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+Found a closing bracket
     <title> IVS VLBI Sessions 
+Found a closing bracket
 2024
 
 
 </title>
+Found a closing bracket
     <meta name="description" content=""/>
+Found a closing bracket
     <meta name="author" content=""/>
+Found a closing bracket
     <meta name="keywords" content=""/>
+Found a closing bracket
     
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400|Source+Sans+Pro:400,600" rel="stylesheet">
+Found a closing bracket
     <link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="/static/css/normalize.css">
+Found a closing bracket
     <link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="/static/css/main.css">
+Found a closing bracket
 
     
     <script language="javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=NASA&subagency=GSFC&dclink=true"></script>
+Found a closing bracket
+Found a closing bracket
 </head>
+Found a closing bracket
 <body>
+Found a closing bracket
     <div role="banner">
+Found a closing bracket
         <ul role="navigation">
+Found a closing bracket
             <li> <a href="/">IVS</a></li>
+Found a closing bracket
+Found a closing bracket
+Found a closing bracket
+Found a closing bracket
             <li> <a href="/sessions/">Sessions</a> </li>
+Found a closing bracket
+Found a closing bracket
+Found a closing bracket
+Found a closing bracket
             
 
 <li>  2024
+Found a closing bracket
 
 </li>
+Found a closing bracket
 
         </ul>
+Found a closing bracket
     </div>
+Found a closing bracket
     <main>
+Found a closing bracket
         
 <header>
+Found a closing bracket
     <div>
+Found a closing bracket
         <h1 class="title">  Master Schedule 2024
+Found a closing bracket
             
         </h1>
+Found a closing bracket
     </div>
+Found a closing bracket
     <div role="navigation" id="session-nav">
+Found a closing bracket
         
         
         <a href="/sessions/2023/" id="nav-previous" > Previous </a>
+Found a closing bracket
+Found a closing bracket
         
         
         
     </div>
+Found a closing bracket
 </header>
+Found a closing bracket
 
 <section class="full">
+Found a closing bracket
     
     <table class="sessions responsive">
+Found a closing bracket
         <thead>
+Found a closing bracket
             <tr>
+Found a closing bracket
                 <th>Type</th>
+Found a closing bracket
+Found a closing bracket
                 <th>Code</th>
+Found a closing bracket
+Found a closing bracket
                 <th>Start</th>
+Found a closing bracket
+Found a closing bracket
                 <th class="doy">DOY</th>
+Found a closing bracket
+Found a closing bracket
                 <th class="duration">Dur</th>
+Found a closing bracket
+Found a closing bracket
                 <th class="stations">Stations</th>
+Found a closing bracket
+Found a closing bracket
                 <th>DB Code</th>
+Found a closing bracket
+Found a closing bracket
                 <th>Ops Center</th>
+Found a closing bracket
+Found a closing bracket
                 <th>Correlator</th>
+Found a closing bracket
+Found a closing bracket
                 <th>Status</th>
+Found a closing bracket
+Found a closing bracket
                 <th>Analysis</th>
+Found a closing bracket
+Found a closing bracket
             </tr>
+Found a closing bracket
         </thead>
+Found a closing bracket
         
         <tr class="spacer"><th>January </th> </tr>
+Found a closing bracket
+Found a closing bracket
+Found a closing bracket
+Found a closing bracket
         <tr class="session
 
 
@@ -90,60 +164,122 @@ analyzed
 
 "
             >
+Found a closing bracket
 
 	        <td class="session-type"><a href="/descriptions#ivs-r1">IVS-R1</a></td>
+Found a closing bracket
+Found a closing bracket
+Found a closing bracket
+Found a closing bracket
             <td class="session-id"><a href="/sessions/2024/r11136/">R11136</a></td>
+Found a closing bracket
+Found a closing bracket
+Found a closing bracket
+Found a closing bracket
             <td class="start">2024-01-02 17:00 </td>
+Found a closing bracket
+Found a closing bracket
             <td class="doy">2</td>
+Found a closing bracket
+Found a closing bracket
             <td class="duration">24:00</td>
+Found a closing bracket
+Found a closing bracket
             <td class="stations">
+Found a closing bracket
                 <ul>
+Found a closing bracket
                     
                     <li class="station-id ">
+Found a closing bracket
                         <a href="/sessions/stations/ag/">Ag</a>
+Found a closing bracket
+Found a closing bracket
                     </li>
+Found a closing bracket
                     
                     <li class="station-id ">
+Found a closing bracket
                         <a href="/sessions/stations/ht/">Ht</a>
+Found a closing bracket
+Found a closing bracket
                     </li>
+Found a closing bracket
                     
                     <li class="station-id ">
+Found a closing bracket
                         <a href="/sessions/stations/kk/">Kk</a>
+Found a closing bracket
+Found a closing bracket
                     </li>
+Found a closing bracket
                     
                     <li class="station-id ">
+Found a closing bracket
                         <a href="/sessions/stations/kv/">Kv</a>
+Found a closing bracket
+Found a closing bracket
                     </li>
+Found a closing bracket
                     
                     <li class="station-id ">
+Found a closing bracket
                         <a href="/sessions/stations/ma/">Ma</a>
+Found a closing bracket
+Found a closing bracket
                     </li>
+Found a closing bracket
                     
                     <li class="station-id ">
+Found a closing bracket
                         <a href="/sessions/stations/ns/">Ns</a>
+Found a closing bracket
+Found a closing bracket
                     </li>
+Found a closing bracket
                     
                     <li class="station-id ">
+Found a closing bracket
                         <a href="/sessions/stations/on/">On</a>
+Found a closing bracket
+Found a closing bracket
                     </li>
+Found a closing bracket
                     
                     <li class="station-id ">
+Found a closing bracket
                         <a href="/sessions/stations/wz/">Wz</a>
+Found a closing bracket
+Found a closing bracket
                     </li>
+Found a closing bracket
                     
                 </ul>
+Found a closing bracket
 
             </td>
+Found a closing bracket
             <td class="db-code"></td>
+Found a closing bracket
+Found a closing bracket
             <td class="opscenter completed">NASA</td>
+Found a closing bracket
+Found a closing bracket
             <td class="correlator completed">BONN</td>
+Found a closing bracket
+Found a closing bracket
             <td class="status released">
+Found a closing bracket
                 
                 Released
                 
             </td>
+Found a closing bracket
             <td class="analysis-center">NASA</td>
+Found a closing bracket
+Found a closing bracket
         </tr>
+Found a closing bracket
         
         
         <tr class="session
@@ -166,68 +302,138 @@ analyzed
 
 "
             >
+Found a closing bracket
 
 	        <td class="session-type"><a href="/descriptions#vgos-ops">VGOS-OPS</a></td>
+Found a closing bracket
+Found a closing bracket
+Found a closing bracket
+Found a closing bracket
             <td class="session-id"><a href="/sessions/2024/vo4003/">VO4003</a></td>
+Found a closing bracket
+Found a closing bracket
+Found a closing bracket
+Found a closing bracket
             <td class="start">2024-01-03 12:00 </td>
+Found a closing bracket
+Found a closing bracket
             <td class="doy">3</td>
+Found a closing bracket
+Found a closing bracket
             <td class="duration">24:00</td>
+Found a closing bracket
+Found a closing bracket
             <td class="stations">
+Found a closing bracket
                 <ul>
+Found a closing bracket
                     
                     <li class="station-id ">
+Found a closing bracket
                         <a href="/sessions/stations/gs/">Gs</a>
+Found a closing bracket
+Found a closing bracket
                     </li>
+Found a closing bracket
                     
                     <li class="station-id ">
+Found a closing bracket
                         <a href="/sessions/stations/k2/">K2</a>
+Found a closing bracket
+Found a closing bracket
                     </li>
+Found a closing bracket
                     
                     <li class="station-id ">
+Found a closing bracket
                         <a href="/sessions/stations/mg/">Mg</a>
+Found a closing bracket
+Found a closing bracket
                     </li>
+Found a closing bracket
                     
                     <li class="station-id ">
+Found a closing bracket
                         <a href="/sessions/stations/oe/">Oe</a>
+Found a closing bracket
+Found a closing bracket
                     </li>
+Found a closing bracket
                     
                     <li class="station-id ">
+Found a closing bracket
                         <a href="/sessions/stations/ow/">Ow</a>
+Found a closing bracket
+Found a closing bracket
                     </li>
+Found a closing bracket
                     
                     <li class="station-id ">
+Found a closing bracket
                         <a href="/sessions/stations/sa/">Sa</a>
+Found a closing bracket
+Found a closing bracket
                     </li>
+Found a closing bracket
                     
                     <li class="station-id ">
+Found a closing bracket
                         <a href="/sessions/stations/wf/">Wf</a>
+Found a closing bracket
+Found a closing bracket
                     </li>
+Found a closing bracket
                     
                     <li class="station-id ">
+Found a closing bracket
                         <a href="/sessions/stations/ws/">Ws</a>
+Found a closing bracket
+Found a closing bracket
                     </li>
+Found a closing bracket
                     
                     <li class="station-id removed">
+Found a closing bracket
                         <a href="/sessions/stations/nn/">Nn</a>
+Found a closing bracket
+Found a closing bracket
                     </li>
+Found a closing bracket
                     
                     <li class="station-id removed">
+Found a closing bracket
                         <a href="/sessions/stations/yj/">Yj</a>
+Found a closing bracket
+Found a closing bracket
                     </li>
+Found a closing bracket
                     
                 </ul>
+Found a closing bracket
 
             </td>
+Found a closing bracket
             <td class="db-code"></td>
+Found a closing bracket
+Found a closing bracket
             <td class="opscenter completed">NASA</td>
+Found a closing bracket
+Found a closing bracket
             <td class="correlator completed">VIEN</td>
+Found a closing bracket
+Found a closing bracket
             <td class="status released">
+Found a closing bracket
                 
                 Released
                 
             </td>
+Found a closing bracket
             <td class="analysis-center">NASA</td>
+Found a closing bracket
+Found a closing bracket
         </tr>
+Found a closing bracket
         
         
         <tr class="session
@@ -250,22 +456,41 @@ analyzed
 
 "
             >
+Found a closing bracket
 
         
     </table>
+Found a closing bracket
     
 </section>
+Found a closing bracket
 
     </main>
+Found a closing bracket
     <script src="/static/js/ivs.js"></script>
+Found a closing bracket
+Found a closing bracket
     
     <footer>
+Found a closing bracket
         This page was last updated <time datetime="2024-04-29 13:11 UTC">2024-04-29 13:11 UTC</time>.
+Found a closing bracket
+Found a closing bracket
         <br>
+Found a closing bracket
         If these contents are out of date, check the IVS data centers:
         <a href="https://cddis.nasa.gov/archive/vlbi/ivsdata/aux/2024" target="_blank">CDDIS</a>,
+Found a closing bracket
+Found a closing bracket
         <a href="https://ivs.bkg.bund.de/data_dir/vlbi/ivsdata/aux/2024">BKG</a>, and
+Found a closing bracket
+Found a closing bracket
         <a href="ftp://ivsopar.obspm.fr/pub/vlbi/ivsdata/aux/2024">OPAR</a>.
+Found a closing bracket
+Found a closing bracket
     </footer>
+Found a closing bracket
 </body>
+Found a closing bracket
 </html>
+Found a closing bracket
