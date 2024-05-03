@@ -1,4 +1,4 @@
 htmlparser
-./obj
+./obj/*.o
 *.o
 

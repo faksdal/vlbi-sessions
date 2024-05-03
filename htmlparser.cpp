@@ -63,9 +63,14 @@ void parser(char* S)
 */
   
 // Driver Code 
-int main() 
-{ 
-    htmlparse	parse("2024-small");
+int main(int argc, char **argv)
+{
+	if(argc < 2){
+		cout << "Specify input file!" << endl;
+		cout << "Usage: " << argv[0] << " <input-file.html>" << endl;
+		exit(-1);
+	}
+    htmlparse	parse(argv[1]);
   
     return 0; 
 }
