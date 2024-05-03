@@ -19,8 +19,8 @@ using namespace std;
 
 class htmlparse {
 
-	int			startPos, endPos;
-	long		fileSize;
+	//int			startPos, endPos;
+	//long		fileSize;
 
 	char		*fileName;
 
