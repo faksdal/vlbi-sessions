@@ -1,18 +1,43 @@
- 
-CC=g++
-CFLAGS=-I.
-OBJ = obj/htmlparse.o obj/htmlparser.o
+#
+#
+#	Makefile
+#	
+#	target: prerequisites prerequisites ...
+#		<tab>command
+#		<tab>command
+#
+#	$@	=	target name
+#	$?	=	all prerequisites newer than target
+#	$<	=	first prerequisites
+#	$^	=	all prerequisites
+#
+#	The @ in front of the echo command, prevents the actual command from being printed to screen
+#
+#	$(patsubst PATTERN,REPLACEMENT,TEXT)
+####################################################################################################
+TARGET = htmlparser
+CXX = g++
+CPPFLAGS = -Iinc -I. -g -Wall
 
-all: $(OBJ)
-	$(CC) $(OBJ) -o htmlparser
+OBJDIR = obj
 
-obj/htmlparse.o: htmlparse.cpp
-	$(CC) $(CFLAGS) -c -o obj/htmlparse.o htmlparse.cpp
-	
-obj/htmlparser.o: htmlparser.cpp
-	$(CC) $(CFLAGS) -c -o obj/htmlparser.o htmlparser.cpp
+INCDIR = inc
+SRCDIR = src
 
+SOURCES = $(wildcard *.cpp $(SRCDIR)/*.cpp)
+OBJFILES = $(patsubst %.cpp, $(OBJDIR)/%.o, $(notdir $(SOURCES)))
+
+
+
+$(TARGET): $(OBJFILES)
+	$(CXX) $(CPPFLAGS) -o $(TARGET) $(OBJFILES)
+
+$(OBJDIR)/%.o: $(SRCDIR)/%.cpp	
+	$(CXX) $(CPPFLAGS) -c -o $@ $^
+
+$(OBJDIR)/htmlparser.o: htmlparser.cpp
+	@echo $(OBJFILES)
+	$(CXX) $(CPPFLAGS) -c -o $@ $<
 
 clean:
-	rm -rf obj/*.o
-
+	rm  $(OBJDIR)/*
