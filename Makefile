@@ -1,13 +1,16 @@
  
-CC=gcc
+CC=g++
 CFLAGS=-I.
-OBJ = obj/htmlparser.o
+OBJ = obj/htmlparse.o obj/htmlparser.o
 
 all: $(OBJ)
 	$(CC) $(OBJ) -o htmlparser
 
-obj/htmlparser.o: htmlparser.c
-	$(CC) $(CFLAGS) -c -o obj/htmlparser.o htmlparser.c
+obj/htmlparse.o: htmlparse.cpp
+	$(CC) $(CFLAGS) -c -o obj/htmlparse.o htmlparse.cpp
+
+obj/htmlparser.o: htmlparser.cpp
+	$(CC) $(CFLAGS) -c -o obj/htmlparser.o htmlparser.cpp
 
 
 clean:
