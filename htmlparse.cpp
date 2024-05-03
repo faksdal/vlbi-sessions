@@ -18,12 +18,12 @@
 
 htmlparse::htmlparse(char *_fileName)
 {
-	cout << "Constructor called" << endl;
+	//cout << "Constructor called" << endl;
 
 	fileName = _fileName;
 	inputFile.open(_fileName, ios::ate);
 	if(inputFile.is_open()){
-		cout << "File opened! " << fileName << endl;
+		//cout << "File opened! " << fileName << endl;
 		fileSize = inputFile.tellg();
 
 		inputFile.seekg (0, inputFile.beg);
@@ -37,7 +37,7 @@ htmlparse::htmlparse(char *_fileName)
 
 htmlparse::~htmlparse()
 {
-	cout << "Destructor called" << endl;
+	//cout << "Destructor called" << endl;
 
 	inputFile.close();
 
@@ -47,55 +47,31 @@ htmlparse::~htmlparse()
 
 void htmlparse::parse(void)
 {
-	cout << "Inside the parser!" << endl;
-	cout << "File size: " << fileSize << endl;
-
-
-	int 	start = 0, end = 0;
+	int 	start = 0, end = 0, LINESIZE = 256;
 	int 	i, j;
+	char	htmlLine[LINESIZE];
 	char	c;
+	bool	quit = false;
 
-	while(!inputFile.eof()){
-		inputFile.get(c);
-		cout << c;
-	}
+	// while not end-of-file
+	while(!quit){
 
-	// Store the length of the input file
+		for(i = 0; i < LINESIZE; i++){
 
+			htmlLine[i] = inputFile.get();
 
-	    /*
-	    // Traverse the string
-	    for (i = 0; i < n; i++) {
-	        // If S[i] is '>', update
-	        // start to i+1 and break
-	        if (inputFile.get() == '>') {
-	            start = i + 1;
-	            break;
-	        }
-	    }
+			if(inputFile.eof()){
+				quit = true;
+				break;
+			} // if(inputFile.eof())
 
-	    // Remove the blank spaces
-	    while (inputFile.get() == ' ') {
-	        start++;
-	    }
+			if(htmlLine[i] == '\n'){
+				htmlLine[i+1] = '\0';
+				cout << htmlLine;
+				break;
+			} // if(htmlLine[i] == '\n')
 
-	    // Traverse the string
-	    for (i = start; i < n; i++) {
-	        // If S[i] is '<', update
-	        // end to i-1 and break
-	        if (inputFile.get() == '<') {
-	            end = i - 1;
-	            break;
-	        }
-	    }
+		} // for(i = 0; i < LINESIZE; i++)
 
-	    // Print the characters in the
-	    // range [start, end]
-	    for (j = start; j <= end; j++) {
-	        printf("%c", inputFile.get());
-	    }
-	    */
-
-	    printf("\n");
-
+	} // while-loop
 }

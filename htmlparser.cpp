@@ -17,6 +17,7 @@
 
 
 
+/*
 // Function to parse the HTML code 
 void parser(char* S) 
 { 
@@ -59,11 +60,12 @@ void parser(char* S)
   
     printf("\n"); 
 } 
+*/
   
 // Driver Code 
 int main() 
 { 
-    htmlparse	parse("2024");
+    htmlparse	parse("2024-small");
   
     return 0; 
 }
