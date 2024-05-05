@@ -42,8 +42,7 @@ void htmlparse::parse(void)
 			//
 			if(htmlLine[i] == '\n'){
 				htmlLine[i+1] = '\0';
-				cout << htmlLine;
-				break;
+				//cout << htmlLine;
 			} // if(htmlLine[i] == '\n')
 
 			// When we've read the whole line,
@@ -53,9 +52,11 @@ void htmlparse::parse(void)
 			// is a character we wanna keep.
 			//
 			start = 0, end = i;
+			//cout << "i = " << i << endl;
 			while(start++ < end){
 				if(htmlLine[start] == '>'){
 					cout << "Found a closing bracket" << endl;
+					//break;
 				} // if(htmlLine[start] == '>')
 			} // while(start++ < end)
 
