@@ -16,23 +16,27 @@
 int htmlparse::scanForHtml(char *_stringToScan, int _strLength)
 {
 	int retClosingBracketCounter = 0, i = 0;
-	//bool	writeCharacter = false;
 
-	//cout << "String length: " << _strLength << " - " << _stringToScan << endl;
 
 	while(i <= _strLength){
 
-		/*
+
 		while(_stringToScan[i] == ' ')
 			i++;
-		*/
+
 
 		if(_stringToScan[i] == '<'){
+			while(_stringToScan[i] == ' ')
+							i++;
 			while(_stringToScan[i] != '>')
 				i++;
+			while(_stringToScan[i] == ' ')
+				i++;
 		}
-		else
+		else{
 			cout << _stringToScan[i];
+
+		}
 		i++;
 
 	}

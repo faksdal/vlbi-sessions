@@ -25,6 +25,90 @@ This is text inside the body!:
     <a href="https://ivs.bkg.bund.de/data_dir/vlbi/ivsdata/aux/2024">BKG</a>, and
     <a href="ftp://ivsopar.obspm.fr/pub/vlbi/ivsdata/aux/2024">OPAR</a>.
     </footer>
-    Her er det 28 closing brackets
+
+
+    <tr class="session
+
+
+scheduled
+
+
+
+observed
+
+
+
+correlated
+
+
+
+analyzed
+
+
+"
+            >
+
+	        <td class="session-type"><a href="/descriptions#vgos-ops">VGOS-OPS</a></td>
+            <td class="session-id"><a href="/sessions/2024/vo4003/">VO4003</a></td>
+            <td class="start">2024-01-03 12:00 </td>
+            <td class="doy">3</td>
+            <td class="duration">24:00</td>
+            <td class="stations">
+                <ul>
+
+                    <li class="station-id ">
+                        <a href="/sessions/stations/gs/">Gs</a>
+                    </li>
+
+                    <li class="station-id ">
+                        <a href="/sessions/stations/k2/">K2</a>
+                    </li>
+
+                    <li class="station-id ">
+                        <a href="/sessions/stations/mg/">Mg</a>
+                    </li>
+
+                    <li class="station-id ">
+                        <a href="/sessions/stations/oe/">Oe</a>
+                    </li>
+
+                    <li class="station-id ">
+                        <a href="/sessions/stations/ow/">Ow</a>
+                    </li>
+
+                    <li class="station-id ">
+                        <a href="/sessions/stations/sa/">Sa</a>
+                    </li>
+
+                    <li class="station-id ">
+                        <a href="/sessions/stations/wf/">Wf</a>
+                    </li>
+
+                    <li class="station-id ">
+                        <a href="/sessions/stations/ws/">Ws</a>
+                    </li>
+
+                    <li class="station-id removed">
+                        <a href="/sessions/stations/nn/">Nn</a>
+                    </li>
+
+                    <li class="station-id removed">
+                        <a href="/sessions/stations/yj/">Yj</a>
+                    </li>
+
+                </ul>
+
+            </td>
+            <td class="db-code"></td>
+            <td class="opscenter completed">NASA</td>
+            <td class="correlator completed">VIEN</td>
+            <td class="status released">
+
+                Released
+
+            </td>
+            <td class="analysis-center">NASA</td>
+        </tr>
+
 </body>
 </html>
