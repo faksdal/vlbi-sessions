@@ -33,7 +33,7 @@ void htmlparse::parse(void)
 
 		//
 		//	If we encounter end-of-line, we must terminate the string.
-		//	Next, we scan the string for html clsing brackets.
+		//	Next, we scan the string for html-tags.
 		//
 		if(htmlLine[counter] == '\n'){
 			htmlLine[counter+1] = '\0';
@@ -41,7 +41,8 @@ void htmlparse::parse(void)
 			//
 			//	Scan the string
 			//
-			cout << htmlLine;
+			//cout << htmlLine;
+			scanForHtml(htmlLine);
 
 			//
 			//	Reset the counter
