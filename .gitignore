@@ -1,5 +1,6 @@
 htmlparser
 ./obj/*.o
 *.o
-*.txt
+2024-small.txt
+
 
