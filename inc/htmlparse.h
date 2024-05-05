@@ -20,6 +20,7 @@ using namespace std;
 class htmlparse {
 
 	//int			startPos, endPos;
+	int			MAXINPUTLINELENGTH;
 	long		fileSize;
 
 	char		*fileName;

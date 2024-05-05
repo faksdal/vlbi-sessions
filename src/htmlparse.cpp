@@ -31,6 +31,8 @@ htmlparse::htmlparse(char *_fileName)
 		inputFile.seekg(0, inputFile.beg);
 	}
 
+	MAXINPUTLINELENGTH = 256;
+
 	//
 	// Call parse() to, well, parse the input file...
 	//

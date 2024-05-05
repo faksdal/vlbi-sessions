@@ -14,53 +14,55 @@
 
 void htmlparse::parse(void)
 {
-	int 	start = 0, end = 0, LINESIZE = 256;
-	int 	i; //, j;
-	char	htmlLine[LINESIZE];
-	//char	c;
+	int 	counter;
+	char	htmlLine[MAXINPUTLINELENGTH];
 	bool	quit = false;
 
 	//
-	// While not end-of-file, keep reading lines from input file
+	//	reset counters
+	//
+	counter = 0;
+
+	//
+	//	Read through the file, put every line into a buffer, until we reach
+	//	end-of-file.
 	//
 	while(!quit){
 
-		for(i = 0; i < LINESIZE; i++){
-			htmlLine[i] = inputFile.get();
+		htmlLine[counter] = inputFile.get();
+
+		//
+		//	If we encounter end-of-line, we must terminate the string.
+		//	Next, we scan the string for html clsing brackets.
+		//
+		if(htmlLine[counter] == '\n'){
+			htmlLine[counter+1] = '\0';
 
 			//
-			// If we reach end-of-file we must quit reading
+			//	Scan the string
 			//
-			if(inputFile.eof()){
-				quit = true;
-				break;
-			} // if(inputFile.eof())
+			cout << htmlLine;
 
 			//
-			// Scan for the newline character, '\n', this marks the end of a line.
-			// Terminate the particular line with '\0'.
+			//	Reset the counter
 			//
-			if(htmlLine[i] == '\n'){
-				htmlLine[i+1] = '\0';
-				//cout << htmlLine;
-			} // if(htmlLine[i] == '\n')
+			counter = -1;
+		}
 
-			// When we've read the whole line,
-			// we must parse it, looking for html formatting.
-			// An easy way to do that, is to look for a closing bracket, '>'.
-			// Every character after a closing bracket, up until the first opening bracket,
-			// is a character we wanna keep.
-			//
-			start = 0, end = i;
-			//cout << "i = " << i << endl;
-			while(start++ < end){
-				if(htmlLine[start] == '>'){
-					cout << "Found a closing bracket" << endl;
-					//break;
-				} // if(htmlLine[start] == '>')
-			} // while(start++ < end)
+		//
+		//	Break out of the while-loop when we reach end-of-file
+		//
+		if(inputFile.eof()){
+			quit = true;
+		}
 
-		} // for(i = 0; i < LINESIZE; i++)
+		//
+		//	Break out of the while-loop if we reach maximum buffer size
+		//
+		if(counter >= MAXINPUTLINELENGTH)
+			quit = true;
 
-	} // while-loop
+		counter++;
+
+	} //	while(!quit)
 }
