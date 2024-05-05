@@ -3,11 +3,12 @@
  *
  *  Created on: 3 May 2024
  *      Author: jole
+ *
+ *	This function does the actual parsing of the input file.
  */
 
 
 #include "htmlparse.h"
-
 
 
 
@@ -19,36 +20,44 @@ void htmlparse::parse(void)
 	//char	c;
 	bool	quit = false;
 
-	// while not end-of-file
+	//
+	// While not end-of-file, keep reading lines from input file
+	//
 	while(!quit){
 
 		for(i = 0; i < LINESIZE; i++){
-
 			htmlLine[i] = inputFile.get();
 
+			//
+			// If we reach end-of-file we must quit reading
+			//
 			if(inputFile.eof()){
 				quit = true;
 				break;
 			} // if(inputFile.eof())
+
+			//
+			// Scan for the newline character, '\n', this marks the end of a line.
+			// Terminate the particular line with '\0'.
+			//
+			if(htmlLine[i] == '\n'){
+				htmlLine[i+1] = '\0';
+				cout << htmlLine;
+				break;
+			} // if(htmlLine[i] == '\n')
 
 			// When we've read the whole line,
 			// we must parse it, looking for html formatting.
 			// An easy way to do that, is to look for a closing bracket, '>'.
 			// Every character after a closing bracket, up until the first opening bracket,
 			// is a character we wanna keep.
-			if(htmlLine[i] == '\n'){
-				htmlLine[i+1] = '\0';
-				cout << htmlLine;
-
-				start = 0, end = i;
-				while(start++ < end){
-					if(htmlLine[start] == '>'){
-						cout << "Found a closing bracket" << endl;
-					} // if(htmlLine[start] == '>')
-				} // while(start++ < end)
-
-				break;
-			} // if(htmlLine[i] == '\n')
+			//
+			start = 0, end = i;
+			while(start++ < end){
+				if(htmlLine[start] == '>'){
+					cout << "Found a closing bracket" << endl;
+				} // if(htmlLine[start] == '>')
+			} // while(start++ < end)
 
 		} // for(i = 0; i < LINESIZE; i++)
 

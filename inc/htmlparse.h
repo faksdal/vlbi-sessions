@@ -20,12 +20,11 @@ using namespace std;
 class htmlparse {
 
 	//int			startPos, endPos;
-	//long		fileSize;
+	long		fileSize;
 
 	char		*fileName;
 
 	ifstream	inputFile;
-	//ifstream	fin;
 
 	void	parse(void);
 

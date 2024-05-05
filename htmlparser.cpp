@@ -70,7 +70,7 @@ int main(int argc, char **argv)
 		cout << "Usage: " << argv[0] << " <input-file.html>" << endl;
 		exit(-1);
 	}
-    htmlparse	parse(argv[1]);
+    htmlparse parse(argv[1]);
   
     return 0; 
 }
