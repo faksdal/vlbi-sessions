@@ -14,14 +14,14 @@
 
 void htmlparse::parse(void)
 {
-	int 	counter;
+	int 	counter, closingBracketCounter;
 	char	htmlLine[MAXINPUTLINELENGTH];
 	bool	quit = false;
 
 	//
 	//	reset counters
 	//
-	counter = 0;
+	counter = closingBracketCounter = 0;
 
 	//
 	//	Read through the file, put every line into a buffer, until we reach
@@ -42,7 +42,8 @@ void htmlparse::parse(void)
 			//	Scan the string
 			//
 			//cout << htmlLine;
-			scanForHtml(htmlLine);
+			closingBracketCounter += scanForHtml(htmlLine, counter);
+			//cout << "Number of closing brackets so far: " << closingBracketCounter << endl;
 
 			//
 			//	Reset the counter
@@ -66,4 +67,10 @@ void htmlparse::parse(void)
 		counter++;
 
 	} //	while(!quit)
+
+	//cout << "Total number of closing brackets: " << closingBracketCounter << endl;
 }
+
+
+
+

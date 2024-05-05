@@ -28,7 +28,7 @@ class htmlparse {
 	ifstream	inputFile;
 
 	void	parse(void);
-	void	scanForHtml(char *stringToScan);
+	int		scanForHtml(char *_stringToScan, int _strLength);
 
 public:
 	htmlparse(char *_fileName);
