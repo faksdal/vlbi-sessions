@@ -15,11 +15,11 @@
 
 
 
-string htmlparse::scanForHtml(char *_stringToScan, int _strLength)
+string htmlparse::scanForHtml(char *_stringToScan, int _strLength, string _startTag, string _endTag)
 {
-	string	stringToScan	=_stringToScan;
-	string	startTag		= "<th>";
-	string	endTag			= "</th>";
+	string	stringToScan	= _stringToScan;
+	string	startTag		= _startTag;
+	string	endTag			= _endTag;
 	string	retVal;
 
 
