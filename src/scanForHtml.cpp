@@ -24,6 +24,7 @@ string htmlparse::scanForHtml(char *_stringToScan, int _strLength, string _start
 
 
 
+	//cout << "String before scan: " << _stringToScan;
 	if(int firstOccurence = stringToScan.find(startTag) != string::npos){
 		int lastOccurence = stringToScan.find(endTag);
 
@@ -44,7 +45,7 @@ string htmlparse::scanForHtml(char *_stringToScan, int _strLength, string _start
 		_stringToScan[lastOccurence] = '\0';
 		_stringToScan += (firstOccurence-1) + startTag.length();
 		retVal = _stringToScan;
-		//cout << " String after scan: " << retVal << endl << endl;
+		//cout << " String after scan: " << retVal << endl;
 
 		//cout << " String after scan: " << _stringToScan << endl << endl;
 

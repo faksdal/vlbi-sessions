@@ -14,14 +14,15 @@
 
 void htmlparse::parse(void)
 {
-	int 	counter, closingBracketCounter;
+	int 	c;
 	char	htmlLine[MAXINPUTLINELENGTH];
 	bool	quit = false;
+	string	parsedLine;
 
 	//
 	//	reset counters
 	//
-	counter = closingBracketCounter = 0;
+	c = 0;
 
 	//
 	//	Read through the file, put every line into a buffer, until we reach
@@ -29,31 +30,40 @@ void htmlparse::parse(void)
 	//
 	while(!quit){
 
-		htmlLine[counter] = inputFile.get();
+		htmlLine[c] = inputFile.get();
 
 		//
 		//	If we encounter end-of-line, we must terminate the string.
 		//	Next, we scan the string for html-tags.
 		//
-		if(htmlLine[counter] == '\n'){
-			htmlLine[counter+1] = '\0';
+		if(htmlLine[c] == '\n'){
+			htmlLine[c+1] = '\0';
 
 			//
 			//	Get rid of any initial whitepace, and pass the
 			//	string to the html parser routine
 			//
 			char* ptr = htmlLine;
-			cout << "ptr before removing whitespace: " << ptr;
+			//cout << "ptr before removing whitespace: " << ptr;
 			while(*ptr++ == ' ');
-			cout << "ptr after removing whitespace: " << ptr;
+			*ptr--;
+			//cout << " ptr after removing whitespace: " << ptr;
 
-			cout << "String upon return to parse(): " << scanForHtml(ptr, counter) << endl;
+			//cout << "String upon return to parse(): " << scanForHtml(ptr, counter, "<li>", "</li>") << endl;
 			//cout << retPtr;
 
+			//scanForHtml(ptr, c, "<li ", "</li>");
+			parsedLine = scanForHtml(ptr, c, "<title>", "</title>");
+			if(parsedLine.length() > 0)
+				cout << parsedLine << endl;
+
+			parsedLine = scanForHtml(ptr, c, "<li>", "</li>");
+			if(parsedLine.length() > 0)
+				cout << parsedLine << endl;
 			//
 			//	Reset the counter
 			//
-			counter = -1;
+			c = -1;
 		}
 
 		//
@@ -66,10 +76,12 @@ void htmlparse::parse(void)
 		//
 		//	Break out of the while-loop if we reach maximum buffer size
 		//
-		if(counter >= MAXINPUTLINELENGTH)
+		if(c >= MAXINPUTLINELENGTH)
 			quit = true;
 
-		counter++;
+
+		c++;
+		//cout << "c: " << c << endl;
 
 	} //	while(!quit)
 

@@ -42,3 +42,4 @@ $(OBJDIR)/htmlparser.o: htmlparser.cpp
 clean:
 	rm  $(OBJDIR)/*
 	rm $(TARGET)
+	rm *.o
