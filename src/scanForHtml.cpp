@@ -11,36 +11,44 @@
 
 #include "htmlparse.h"
 
-#include <string>		//	For C++ string operations
+//#include <string>		//	For C++ string operations
 
 
 
-int htmlparse::scanForHtml(char *_stringToScan, int _strLength)
+string htmlparse::scanForHtml(char *_stringToScan, int _strLength)
 {
-	int retval				= 1;
 	string	stringToScan	=_stringToScan;
-	//string	startTag		= "<title>";
-	//string	endTag			= "</title>";
 	string	startTag		= "<th>";
 	string	endTag			= "</th>";
+	string	retVal;
 
 
 
 	if(int firstOccurence = stringToScan.find(startTag) != string::npos){
 		int lastOccurence = stringToScan.find(endTag);
 
-		cout << "First occurence: " << firstOccurence << " Last occurence: " << lastOccurence << endl;
+		//cout << "First occurence: " << firstOccurence << " Last occurence: " << lastOccurence << endl;
+
+		/*
 		cout << "String, character by character: ";
-		for(int i = firstOccurence; i <= lastOccurence; i++){
-			cout << _stringToScan[i] << endl;
+		for(int i = (firstOccurence-1); i <= (lastOccurence-1); i++){
+			cout << _stringToScan[i];
 		}
 		cout << endl;
+		*/
 
 		//cout << "String before scan: " << _stringToScan << "Character at firstOccurence-1: " << _stringToScan[firstOccurence-1] << endl;
-		cout << "String before scan: " << _stringToScan;
+
+		//cout << "String before scan: " << _stringToScan;
+
 		_stringToScan[lastOccurence] = '\0';
 		_stringToScan += (firstOccurence-1) + startTag.length();
-		cout << " String after scan: " << _stringToScan << endl << endl;
+		retVal = _stringToScan;
+		//cout << " String after scan: " << retVal << endl << endl;
+
+		//cout << " String after scan: " << _stringToScan << endl << endl;
+
+		//cout << " String after scan: " << _stringToScan << endl << endl;
 	}
 
 
@@ -70,5 +78,8 @@ int htmlparse::scanForHtml(char *_stringToScan, int _strLength)
 
 	}
 	*/
-	return(retval);
+
+	//cout << " String after scan: " << retVal << endl << endl;
+
+	return(retVal);
 }

@@ -43,9 +43,12 @@ void htmlparse::parse(void)
 			//	string to the html parser routine
 			//
 			char* ptr = htmlLine;
-			while(*ptr == ' ')
-				*ptr++;
-			closingBracketCounter += scanForHtml(ptr, counter);
+			cout << "ptr before removing whitespace: " << ptr;
+			while(*ptr++ == ' ');
+			cout << "ptr after removing whitespace: " << ptr;
+
+			cout << "String upon return to parse(): " << scanForHtml(ptr, counter) << endl;
+			//cout << retPtr;
 
 			//
 			//	Reset the counter

@@ -9,6 +9,7 @@
 #ifndef __HTMLPARSE_H__
 #define __HTMLPARSE_H__
 
+#include <string>
 #include <fstream>
 #include <iostream>
 
@@ -28,7 +29,7 @@ class htmlparse {
 	ifstream	inputFile;
 
 	void	parse(void);
-	int		scanForHtml(char *_stringToScan, int _strLength);
+	string	scanForHtml(char *_stringToScan, int _strLength);
 
 public:
 	htmlparse(char *_fileName);
