@@ -41,8 +41,10 @@ void htmlparse::parse(void)
 			//
 			//	Scan the string
 			//
-			//cout << htmlLine;
-			closingBracketCounter += scanForHtml(htmlLine, counter);
+			char* ptr = htmlLine;
+			while(*ptr == ' ')
+				*ptr++;
+			closingBracketCounter += scanForHtml(ptr, counter);
 			//cout << "Number of closing brackets so far: " << closingBracketCounter << endl;
 
 			//
