@@ -3,3 +3,4 @@ bin/*
 .cproject
 .project
 quickgit.sh
+src_pool/*.*
