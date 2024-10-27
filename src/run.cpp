@@ -20,5 +20,8 @@ void ivsSessions::run(void)
 {
 	readfile();
 	processInput();
+
+	printHeaders();
+	printSessionList();
 }
 
