@@ -1,17 +1,28 @@
 /*
- * readfile.cpp
+ *	readfile.cpp
  *
- *  Created on: 27 Oct 2024
- *      Author: jole
+ *	Created on: 27 Oct 2024
+ *	Author: jole
+ *
+ *
+ *
  */
 
-//#include <fstream>
 #include <iostream>
 
 #include "vlbi_sessions.h"
 
 
 
+////////////////////////////////////////////////////////////////////////////////
+//
+// readfile() reads the entire content of inputfile into memory.
+// It is stored in fo_inputBuffer for later processing
+//
+// readfile() closes the filestream upon completion
+//
+// For debug purposes, we print the input buffer to screen.
+//
 void ivsSessions::readfile(void)
 {
 	char	c;
@@ -43,6 +54,7 @@ void ivsSessions::readfile(void)
 		fo_inputBuffer.append(1, c);
 	}
 
+	// TODO: Not really necessary, as we are closing the file in the next statement!
 	// reset file pointer to beginning of file after read operation
 	// and clear any failbit
 	fo_inputFileStream.clear();
@@ -56,6 +68,8 @@ void ivsSessions::readfile(void)
 	if(fo_inputFileStream.is_open())
 		fo_inputFileStream.close();
 
+	// print input buffer to screen, for debug purposes
+	// TODO: to be deleted on release
 	std::cout << fo_inputBuffer << std::endl;
 
 	return;

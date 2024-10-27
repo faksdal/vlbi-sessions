@@ -22,11 +22,6 @@
 
 #include "vlbi_sessions.h"
 
-void ivsSessions::run(void)
-{
-	readfile();
-}
-
 
 
 ivsSessions::ivsSessions(std::string _inputFileName)
