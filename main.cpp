@@ -1,6 +1,6 @@
 /*******************************************************************************
  *
- * ivs-vlbi.cpp; Created by Jon Leithe
+ * main.cpp; Created by Jon Leithe
  * Date: 21/8-2024
  *
  * 

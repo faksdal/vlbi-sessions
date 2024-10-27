@@ -21,8 +21,7 @@
 //
 // readfile() closes the filestream upon completion
 //
-// For debug purposes, we print the input buffer to screen.
-//
+////////////////////////////////////////////////////////////////////////////////
 void ivsSessions::readfile(void)
 {
 	char	c;
@@ -67,10 +66,6 @@ void ivsSessions::readfile(void)
 	// close the file stream as we are done reading!
 	if(fo_inputFileStream.is_open())
 		fo_inputFileStream.close();
-
-	// print input buffer to screen, for debug purposes
-	// TODO: to be deleted on release
-	std::cout << fo_inputBuffer << std::endl;
 
 	return;
 }

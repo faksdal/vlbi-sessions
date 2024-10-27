@@ -15,8 +15,10 @@
 // It is responsible for calling readfile(), which reads the content of the
 // input file and stores it in memory.
 //
+////////////////////////////////////////////////////////////////////////////////
 void ivsSessions::run(void)
 {
 	readfile();
+	processInput();
 }
 
