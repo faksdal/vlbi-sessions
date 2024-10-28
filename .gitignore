@@ -3,3 +3,5 @@ bin/*
 .cproject
 .project
 quickgit.sh
+get-sessions.sh
+
