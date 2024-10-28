@@ -3,6 +3,3 @@ bin/*
 .cproject
 .project
 quickgit.sh
-src_pool/*.*
-master2025.txt
-master2025-int.txt

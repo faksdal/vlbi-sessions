@@ -1,0 +1,34 @@
+## Master file format version 2.0           2022.11.01 CAD&CCT
+
+                         2025 MULTI-AGENCY SCHEDULE
+
+                     Last Updated - October 18, 2024 - CCT
+
+   SESSION      DATE     SESSION    DOY TIME   DUR                         STATIONS                        SKED CORR  STATUS  DBC  SUBM DEL
+     TYPE     yyyymmdd     CODE     ddd hh:mm  h:mm                                                                  yyyymmdd CODE      days
+--------------------------------------------------------------------------------------------------------------------------------------------
+|IVS-R4      |20250102|r41188      |  2|18:30|24:00|FtHbHtKeKkMaNnUrWzYg                                  |USNO|WASH|        |    |USNO| -77|
+|AUS-AST     |20250106|aua120      |  6|16:30|24:00|HbHtKeYg                                              |DACH|UTAS|        |    |NASA| -81|
+|IVS-R1      |20250107|r11189      |  7|17:00|24:00|FtHbHtIsKeKkKvMaNnOnWzYg                              |NASA|BONN|        |    |NASA| -82|
+|IVS-RDV     |20250108|rv169       |  8|17:30|24:00|HhHoNnOnShVaWwWzYs                                    |USNO|VLBA|        |    |USNO| -83|
+|IVS-R4      |20250109|r41189      |  9|18:30|24:00|BdFtHbHtKeKkNnSvWzYgZc                                |USNO|WASH|        |    |USNO| -84|
+|IVS-R1      |20250113|r11190      | 13|17:00|24:00|AgHbHtIsKeKkKvMaNnWwWzYg                              |NASA|BONN|        |    |NASA| -88|
+|IVS-OHIG    |20250114|ohg153      | 14|17:30|24:00|AgFtHoHtKkOhSyWw                                      |DACH|BONN|        |    |BKG | -89|
+|VGOS-OPS    |20250115|vo5015      | 15|00:00|24:00|GsHbIsK2KeMgNnOeOwSaWfWnWs                            |NASA|VIEN|        |    |NASA| -90|
+|IVS-R4      |20250116|r41190      | 16|18:30|24:00|BdFtHbHtKeKkMaNnSvWzYg                                |USNO|WASH|        |    |USNO| -91|
+|IVS-R1      |20250120|r11191      | 20|17:00|24:00|AgHbHtIsKeKkKvNnNtOnWzYg                              |NASA|BONN|        |    |NASA| -95|
+|IVS-T2      |20250121|t2172       | 21|17:30|24:00|263656AgFtHtKvOnWzYs                                  |DACH|BONN|        |    |BKG | -96|
+|VGOS-OPS    |20250122|vo5022      | 22|00:00|24:00|GsHbIsK2KeMgNnOeOwSaWfWnWs                            |NASA|WASH|        |    |NASA| -97|
+|IVS-CRF     |20250122|crf146      | 22|18:00|24:00|BdHhHoKmSvUrZc                                        |DACH|SHAO|        |    |USNO| -97|
+|IVS-R4      |20250123|r41191      | 23|18:30|24:00|FtHbHtKeKkMaNnWzYgZc                                  |USNO|WASH|        |    |USNO| -98|
+|IVS-R1      |20250127|r11192      | 27|17:00|24:00|AgHbHtIsKeKkNnNtOnWwWzYg                              |NASA|BONN|        |    |NASA|-102|
+|VGOS-OPS    |20250129|vo5029      | 29|00:00|24:00|GsHbIsK2KeMgNnOeOwSaWfWnWs                            |NASA|BONN|        |    |NASA|-104|
+|IVS-RD      |20250129|rd2501      | 29|18:00|24:00|FtHhMaOnWz                                            |OSO |WASH|        |    |NASA|-104|
+|IVS-R4      |20250130|r41192      | 30|18:30|24:00|BdFtHbHtKeKkMaNnSvWzYg                                |USNO|WASH|        |    |USNO|-105|
+--------------------------------------------------------------------------------------------------------------------------------------------
+|IVS-R1      |20250203|r11193      | 34|17:00|24:00|FtHbHtKeKvNnNtOnWzYg                                  |NASA|BONN|        |    |NASA|-109|
+|IVS-RDV     |20250204|rv170       | 35|17:30|24:00|HoHtNnOnVaWwWzYs                                      |USNO|VLBA|        |    |USNO|-110|
+|AOV         |20250205|aov097      | 36|18:00|24:00|HbKeKmKvVmWwYg                                        |SHAO|SHAO|        |    |NASA|-111|
+|IVS-R4      |20250206|r41193      | 37|18:30|24:00|BdFtHbHtKeKkMaNnWzYgZc                                |USNO|WASH|        |    |USNO|-112|
+|IVS-R1      |20250210|r11194      | 41|17:00|24:00|FtHbHtKeKkKvMaNnWwWzYg                                |NASA|BONN|        |    |NASA|-116|
+## Master file format version 2.0           2022.11.01 CAD&CCT

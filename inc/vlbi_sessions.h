@@ -137,7 +137,7 @@ class ivsSessions{
 	// Private functions related to screen output
 	//
 	void	printHeaders(void);
-	void	printSessionList(void);
+	void	printSessionList(long unsigned _startItem);
 	////////////////////////////////////////////////////////////////////////////
 
 

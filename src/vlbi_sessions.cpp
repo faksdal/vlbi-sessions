@@ -28,8 +28,11 @@ ivsSessions::ivsSessions(std::string _inputFileName)
 {
 	fo_inputFileName	= _inputFileName;
 
-	intensiveFlag		= false;
 	fo_inputBufferIndex	= 0;
+
+	intensiveFlag		= false;
+	_visible			= false;
+	_highlighted		= false;
 }
 
 

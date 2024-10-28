@@ -24,6 +24,8 @@ bool ivsSessions::processLine(unsigned long &_startX, unsigned long _length)
 			endIndex++;
 	*/
 
+
+
 	advanceBuffer(_startX, _length);
 	_sessionType.append(fo_inputBuffer, _startX, _length);
 
@@ -65,6 +67,9 @@ bool ivsSessions::processLine(unsigned long &_startX, unsigned long _length)
 
 	advanceBuffer(_startX, _length);
 	_del.append(fo_inputBuffer, _startX, _length);
+
+	// TODO: Print for debug purposes
+	std::cout << "processLine, line 72" << std::endl;
 
 	while((int)fo_inputBuffer[_startX++] != 10);
 
